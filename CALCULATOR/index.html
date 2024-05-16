@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <input type="text"  id="show"readonly>
+        </div>
+        <div class="row">
+            <input type="button" value="AC" id="delete" class="upper" onclick="remove()">
+            <input type="button" value="%" id="modulas" class="upper" onclick="disp(value)">
+        </div>
+        <div class="row">
+            <input type="button" value="7" id="seven" class="btn" onclick="disp(value)">
+            <input type="button" value="8" id="eight" class="btn" onclick="disp(value)">
+            <input type="button" value="9" id="nine" class="btn" onclick="disp(value)">
+            <input type="button" value="/" id="devide" class="operations" onclick="disp(value)">
+        </div>
+        <div class="row">
+            <input type="button" value="4" id="four" class="btn" onclick="disp(value)">
+            <input type="button" value="5" id="five" class="btn" onclick="disp(value)">
+            <input type="button" value="6" id="six" class="btn" onclick="disp(value)">
+            <input type="button" value="*" id="multiply" class="operations" onclick="disp(value)">
+        </div>
+        <div class="row">
+            <input type="button" value="1" id="one" class="btn" onclick="disp(value)">
+            <input type="button" value="2" id="two" class="btn" onclick="disp(value)">
+            <input type="button" value="3" id="three" class="btn" onclick="disp(value)">
+            <input type="button" value="-" id="subtraction" class="operations" onclick="disp(value)">
+        </div>
+        <div class="row">
+            <input type="button" value="0" id="zero" class="btn" onclick="disp(value)">
+            <input type="button" value="." id="point" class="btn" onclick="disp(value)">
+            <input type="button" value="=" id="equalto" class="operations" onclick="ans()">
+            <input type="button" value="+" id="addition" class="operations" onclick="disp(value)">
+        </div>
+        <div id="name">
+            <i>Pranav</i>
+        </div>
+    </div>
+</body>
+<script src="javascript.js"></script>
+</html>
