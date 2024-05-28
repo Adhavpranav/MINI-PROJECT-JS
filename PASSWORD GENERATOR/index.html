@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASSWORD GENERATOR</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2 id="main_title">Password Generator</h2>
+        <hr>
+        <div class="output">
+            <input type="text" id="disp" readonly placeholder="PLZ SELECT AN OPTION">
+        </div>
+        <div class="length">
+            <label for="pass_length">Password Length:</label>
+            <span id="count">12</span>
+            <br>
+            <input type="range" id="pass_length" min="6" max="18" value="12">
+        </div>
+        <div class="pass_settings">
+            <label for="settings">Password Settings</label>
+            <br>
+            <input type="checkbox" id="Lowercase" class="settings">Lowercase
+            <input type="checkbox" id="Uppercase" class="settings">Uppercase
+            <br>
+            <input type="checkbox" id="Numbers" class="settings">Numbers
+            <input type="checkbox" id="Symbols" class="settings">Symbols
+        </div> 
+        <div class="Generator">
+            <input type="button" value="GENERATE PASSWORD" id="btn" onclick="show()">
+        </div>
+        <div class="logo">
+            <h3>Pranav</h3>
+        </div>
+    </div>
+</body>
+<script src="javascript.js"></script>
+</html>
